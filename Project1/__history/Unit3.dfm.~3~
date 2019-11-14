@@ -1,0 +1,26 @@
+object IWForm3: TIWForm3
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  LayoutMgr = IWTemplateProcessorHTML1
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 2
+  DesignTop = 2
+  object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
+    TagType = ttIntraWeb
+    Templates.Default = 'IWForm3.html'
+    RenderStyles = True
+    Left = 256
+    Top = 200
+  end
+end

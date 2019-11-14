@@ -1,0 +1,14 @@
+object IWUserSession: TIWUserSession
+  OldCreateOrder = False
+  Height = 299
+  Width = 493
+  object FDConnection1: TFDConnection
+    Left = 160
+    Top = 144
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'D:\SALVE_AQUI_SEUS_ARQUIVOS\Prova0511\Project1\libmysql.dll'
+    Left = 296
+    Top = 136
+  end
+end

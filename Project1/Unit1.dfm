@@ -1,0 +1,126 @@
+object IWForm1: TIWForm1
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  LayoutMgr = IWTemplateProcessorHTML1
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 2
+  DesignTop = 2
+  object IWButton1: TIWButton
+    Left = 128
+    Top = 128
+    Width = 75
+    Height = 25
+    Cursor = crAuto
+    Css = 'btn btn-dark'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    StyleRenderOptions.RenderSize = True
+    StyleRenderOptions.RenderPosition = True
+    StyleRenderOptions.RenderFont = True
+    StyleRenderOptions.RenderZIndex = True
+    StyleRenderOptions.RenderVisibility = True
+    StyleRenderOptions.RenderStatus = True
+    StyleRenderOptions.RenderAbsolute = True
+    Caption = 'Produtos'
+    DoSubmitValidation = True
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <>
+    TabOrder = 0
+    OnClick = IWButton1Click
+  end
+  object IWButton2: TIWButton
+    Left = 128
+    Top = 168
+    Width = 75
+    Height = 25
+    Cursor = crAuto
+    Css = 'btn btn-dark'
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    StyleRenderOptions.RenderSize = True
+    StyleRenderOptions.RenderPosition = True
+    StyleRenderOptions.RenderFont = True
+    StyleRenderOptions.RenderZIndex = True
+    StyleRenderOptions.RenderVisibility = True
+    StyleRenderOptions.RenderStatus = True
+    StyleRenderOptions.RenderAbsolute = True
+    Caption = 'Fornecedores'
+    DoSubmitValidation = True
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton2'
+    ScriptEvents = <>
+    TabOrder = 1
+    OnClick = IWButton2Click
+  end
+  object IWButton3: TIWButton
+    Left = 128
+    Top = 88
+    Width = 75
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    StyleRenderOptions.RenderSize = True
+    StyleRenderOptions.RenderPosition = True
+    StyleRenderOptions.RenderFont = True
+    StyleRenderOptions.RenderZIndex = True
+    StyleRenderOptions.RenderVisibility = True
+    StyleRenderOptions.RenderStatus = True
+    StyleRenderOptions.RenderAbsolute = True
+    Caption = 'Home'
+    DoSubmitValidation = True
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton3'
+    ScriptEvents = <>
+    TabOrder = 2
+    OnClick = IWButton3Click
+  end
+  object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
+    TagType = ttIntraWeb
+    Templates.Default = 'IWForm1.html'
+    RenderStyles = True
+    Left = 256
+    Top = 216
+  end
+  object QProduto: TFDQuery
+    ConnectionName = 'BANCO'
+    SQL.Strings = (
+      'select * from produto')
+    Left = 384
+    Top = 216
+  end
+  object QFornecedor: TFDQuery
+    ConnectionName = 'BANCO'
+    SQL.Strings = (
+      'select * from fornecedor')
+    Left = 128
+    Top = 216
+  end
+end

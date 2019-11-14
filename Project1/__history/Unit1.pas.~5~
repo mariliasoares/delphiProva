@@ -1,0 +1,49 @@
+unit Unit1;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.Controls, IWVCLBaseControl,
+  IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton;
+
+type
+  TIWForm1 = class(TIWAppForm)
+    IWTemplateProcessorHTML1: TIWTemplateProcessorHTML;
+    QProduto: TFDQuery;
+    QFornecedor: TFDQuery;
+    IWButton1: TIWButton;
+    IWButton2: TIWButton;
+    procedure IWButton1Click(Sender: TObject);
+    procedure IWButton2Click(Sender: TObject);
+
+  public
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit2;
+
+procedure TIWForm1.IWButton1Click(Sender: TObject);
+begin
+  //comando pra mudar o botão
+  TIWForm1.Create(WebApplication).Show();
+  Release;
+end;
+
+procedure TIWForm1.IWButton2Click(Sender: TObject);
+begin
+  TIWForm2.Create(WebApplication).Show();
+  Release;
+end;
+
+initialization
+  TIWForm1.SetAsMainForm;
+
+end.

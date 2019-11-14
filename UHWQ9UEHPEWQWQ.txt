@@ -1,0 +1,22 @@
+1) conectar com BD mysql ->	PRODUTO	->chama form 1  FORNECEDOR -> chama form 3
+				-> IDProduto		-> IDFornecedor
+				-> ProdutoNome		-> FornecedorNome
+				-> ProdutoValor		-> FornecedorCidade
+      			(nao precisa de tabela q relacione produto e fornecedor)
+
+2) usar bootstrap
+3) usar FDSTOREDPROCEDURE
+4) usar conector firedac -> tem que ficar no user section , bd, conexoes
+
+
+| PRODUTOS    FORNECEDORES
+-> clicar em produtos: iwform pra abrir produtos
+-> clicar em fornecedores: iwform pra abrir fornecedores
+2 STORE PROCEDURES: INCLUIR E DELETAR, ALTERAR OU DELETAR
+
+-ter pagina principal
+
+
+4 TEMPLATES : 1 DELES -> MASTER TEMPLATE : Menu NAVBAR disponivel pra todos os formularios NAVBAR: HOME (casinha icon), PRODUTOS E FORNECEDORES
+
+precisar de 3 formulários

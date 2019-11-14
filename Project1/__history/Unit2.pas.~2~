@@ -1,0 +1,21 @@
+unit Unit2;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML;
+
+type
+  TIWForm2 = class(TIWAppForm)
+    IWTemplateProcessorHTML1: TIWTemplateProcessorHTML;
+  public
+  end;
+
+implementation
+
+{$R *.dfm}
+
+
+end.
